@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dangrek" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+
+</head>
+<body>
+
+    <span class="win-Celebration" id="Celebration-Window">
+        <img src="./img/stars.png " id="stars">
+        <img src="./img/vector.png" id="vector" >
+       <span id="text1"> HURRAY!!</span>
+       <span id="text2">YOU WON THE GAME</span>
+    </span>
+
+<div class="main" id="main">
+    <div id="section1">
+    <!-- Score Board -->
+    
+        <div class="Score-Board">
+                <div class="Game-Name">
+                    ROCK<br>
+                    PAPER<br>
+                    SCISSORS<br>
+                </div>
+                <div class="Computer-Score">Computer <br>Score <br>
+                    <span id="ComputerScore">0</span>
+                </div>
+                <div class="Player-Score"> Your <br>Score<br>
+                    <span id="playerScore">0</span>
+                </div>
+        </div>
+
+        <div class="Game-Window" id="Game-Window">
+            <!-- Section 2 -->
+            <div class="play-game" id="game">
+                    <div class="R-div" id="R-div"><img src="./img/rock.png" id="img1"><button id="Rock" value="Rock"></button></div>
+                    <div class="P-div" id="P-div"><img src="./img/paper.png" id="img2"><button id="Paper" value="Paper"></button></div>
+                    <div class="S-div" id="S-div"><img src="./img/scissor.png" id="img3"><button id="Scissors" value="Scissors"></button></div> 
+                    <div class="triangle">
+                            <div id="line1"></div>
+                            <div id="line2"></div>
+                            <div id="line3"></div> 
+                    </div>                   
+            </div>
+            <div id="Game-Result">
+                    <div class="winner_shadow" id="winner_shadow"></div>
+                        <div id="Player-Choice">Your Picked</div>
+                        <!--  User  Choice Icon -->
+                    
+                        <div class="Player-Choice" >
+                            <div id="rock"><img src="./img/rock.png" id="img1"></div>
+                            <div id="scissor"><img src="./img/scissor.png" id="img2"></div>
+                            <div id="paper"><img src="./img/paper.png" id="img3"></div> 
+                        </div>
+                        <div id="Computer-Choice">PC Picked</div>
+                                <!--  Computer  Choice Icon -->
+                        <div class="Computer-Choice"">
+                            <div id="Computer-Rock"><img src="./img/rock.png" id="img1"></div>
+                            <div id="Computer-Scissor"><img src="./img/scissor.png" id="img2"></div>
+                            <div id="Computer-Paper"><img src="./img/paper.png" id="img3"></div>  
+                        </div>
+
+                        <div class="result-text">
+                            <div id="Tie">TIE UP</div>
+                            <div id="Win">YOU WIN<br>AGAINST PC</div>
+                            <div id="loss">YOU LOST <br>AGAINST PC</div>
+                        </div>                             
+                </div>
+            </div>
+    </div>   
+ 
+    <!-- Restart Game -->
+    <div class="buttons">
+        <div><button id="Replay" value="Replay" >Replay</button></div>
+        <div><button id="Play-Again" value="Play-Again">Play Again</button></div>
+    </div>
+
+       <!-- Rule Window -->
+    <button id="RuleButton" value="ShowRuleWindow">RULE</button>
+        <div class="block" id="block-3" >
+            
+            <button id="hide-rule-window" value="hidewindow">X</button>
+            <div class="Rules">
+            <h2> Game Rules </h2>
+            <div class="RuleList">
+                    &#129000; Rock beats scissors, scissors beats paper, and paper beats rock <br><br>
+                    &#129000; Agree ahead of time whether you’ll count off “rock, paper, scissors,shoot” or just “rock, paper, scissors.”<br><br>
+                    &#129000; Use rock, paper, scissors to settle minor decisions or simply play to pass the time<br><br>
+                    &#129000; If both players lay down the same hand, each player lays down another hand<br>
+                </div>
+            </div>
+        </div>
+    <!-- Winner Page -->
+    <button id="NextButton" value="hurray">NEXT</button>
+
+
+</div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
